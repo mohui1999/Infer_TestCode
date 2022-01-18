@@ -1,0 +1,23 @@
+sample_4.c:9: error: Dead Store
+  The value written to &p (type char*) is never used.
+   7. #include <stdlib.h>
+   8. int main(){
+   9.     char *p = (char*)malloc(100 * sizeof(char));
+          ^
+  10.     p = (char*)malloc(50 * sizeof(char));
+  11.     free(p);
+
+sample_4.c:9: error: Memory Leak
+  Pulse found a potential memory leak. Memory dynamically allocated at line 9 by call to `malloc`, is not freed after the last access at line 9, column 5.
+   7. #include <stdlib.h>
+   8. int main(){
+   9.     char *p = (char*)malloc(100 * sizeof(char));
+          ^
+  10.     p = (char*)malloc(50 * sizeof(char));
+  11.     free(p);
+
+
+Found 2 issues
+  Issue Type(ISSUED_TYPE_ID): #
+    Memory Leak(MEMORY_LEAK): 1
+      Dead Store(DEAD_STORE): 1

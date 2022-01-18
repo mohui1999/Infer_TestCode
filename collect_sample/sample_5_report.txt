@@ -1,0 +1,12 @@
+sample_5.c:14: error: Memory Leak
+  Pulse found a potential memory leak. Memory dynamically allocated at line 11 by call to `malloc`, is not freed after the last access at line 14, column 6.
+  12.   }
+  13.   
+  14.   if(a > b){
+           ^
+  15.     free(p);
+  16.   }
+
+Found 1 issue
+  Issue Type(ISSUED_TYPE_ID): #
+    Memory Leak(MEMORY_LEAK): 1

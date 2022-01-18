@@ -1,0 +1,22 @@
+sample_0.cpp:9: error: Null Dereference
+  pointer `p` last assigned on line 8 could be null and is dereferenced at line 9, column 3.
+   7. void deref_null() {
+   8.   int* p = nullptr;
+   9.   *p = 42;
+        ^
+  10. }
+
+sample_0.cpp:7: error: Pure Function
+  Side-effect free function deref_null.
+  5. */
+  6. 
+  7. void deref_null() {
+     ^
+  8.   int* p = nullptr;
+  9.   *p = 42;
+
+
+Found 2 issues
+          Issue Type(ISSUED_TYPE_ID): #
+        Pure Function(PURE_FUNCTION): 1
+  Null Dereference(NULL_DEREFERENCE): 1

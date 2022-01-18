@@ -5,11 +5,11 @@
 */
 
 #include <stdio.h>
-void main()
-{
-    test_main();
-}
 void test_main()
 {
     printf("hello world!");
+}
+void main()
+{
+    test_main();
 }
