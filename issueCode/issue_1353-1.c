@@ -20,3 +20,12 @@ int main()
 
     printf("%d", *x);
 }
+
+
+// Found 1 issue
+
+// issue_1353-1.c:21: error: NULL_DEREFERENCE
+//   pointer `x` last assigned on line 19 could be null and is dereferenced at line 21, column 18.
+//   19.       foo();
+//   20.   
+//   21. >     printf("%d", *x);

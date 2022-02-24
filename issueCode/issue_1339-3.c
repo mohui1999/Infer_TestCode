@@ -6,3 +6,5 @@ int entity_5 ;
 for(;;entity_5)
 entity_3 [ entity_5 ] = 1;   
 } 
+
+

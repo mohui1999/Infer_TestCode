@@ -1,43 +1,43 @@
-[210888][environment] CWD = /home/mohui1999/test/issueCode
-[210888][environment] No .inferconfig file found
-[210888][environment] Project root = /home/mohui1999/test/issueCode
-[210888][environment] INFER_ARGS =   @/tmp/args.tmp.b0d09d  ++Contents of '/tmp/args.tmp.b0d09d':
-[210888][environment]                                         run -F --pulse --purity --biabduction
-[210888][environment]                                         --cost --annotation-reachability
-[210888][environment]                                         --bufferoverrun --liveness
-[210888][environment]                                         --loop-hoisting --quandary --racerd
-[210888][environment]                                         --siof --starvation --uninit
-[210888][environment]                                       
-[210888][environment] command line arguments:   infer run -F --pulse --purity --biabduction --cost
-[210888][environment]                           --annotation-reachability --bufferoverrun
-[210888][environment]                           --liveness --loop-hoisting --quandary --racerd
-[210888][environment]                           --siof --starvation --uninit -- clang -c
-[210888][environment]                           issue_1353-2.cActive checkers: annotation reachability (C/C++/ObjC, Java), biabduction (C/C++/ObjC, Java), buffer overrun analysis (C/C++/ObjC, Java), buffer overrun checker (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), pulse (C/C++/ObjC), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), cost analysis (C/C++/ObjC, Java), loop hoisting (C/C++/ObjC, Java), Starvation analysis (C/C++/ObjC, Java), purity (C/C++/ObjC, Java)
-[210888][environment] Infer log identifier is 
+[11121][environment] CWD = /home/mohui1999/test/issueCode
+[11121][environment] No .inferconfig file found
+[11121][environment] Project root = /home/mohui1999/test/issueCode
+[11121][environment] INFER_ARGS =   @/tmp/args.tmp.58c379  ++Contents of '/tmp/args.tmp.58c379':
+[11121][environment]                                         run --pulse --purity --biabduction
+[11121][environment]                                         --cost --annotation-reachability
+[11121][environment]                                         --bufferoverrun --liveness
+[11121][environment]                                         --loop-hoisting --quandary --racerd
+[11121][environment]                                         --siof --starvation --uninit
+[11121][environment]                                       
+[11121][environment] command line arguments:   infer run --pulse --purity --biabduction --cost
+[11121][environment]                           --annotation-reachability --bufferoverrun
+[11121][environment]                           --liveness --loop-hoisting --quandary --racerd
+[11121][environment]                           --siof --starvation --uninit -- clang -c
+[11121][environment]                           issue_1298.cppActive checkers: annotation reachability (C/C++/ObjC, Java), biabduction (C/C++/ObjC, Java), buffer overrun analysis (C/C++/ObjC, Java), buffer overrun checker (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), pulse (C/C++/ObjC), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), cost analysis (C/C++/ObjC, Java), loop hoisting (C/C++/ObjC, Java), Starvation analysis (C/C++/ObjC, Java), purity (C/C++/ObjC, Java)
+[11121][environment] Infer log identifier is 
 Infer version v0.17.0
-[210888][environment] Copyright 2009 - present Facebook. All Rights Reserved.
-[210888][environment] 
-[210888][   progress] Capturing in make/cc mode...
-[210888][      debug] 
-[210888][      debug] *** Beginning capture of file /home/mohui1999/test/issueCode/issue_1353-2.c ***
-[210888][      debug] Clang frontend action is translating and linting
-[210888][      debug] Loading the following linters files: /usr/local/infer/lib/infer/infer/bin/../lib/linter_rules/linters.al
-[210888][      debug] Elapsed: 64.396ms.
-[210888][      debug] 
-[210888][   progress] Found 1 source file to analyze in /home/mohui1999/test/issueCode/infer-out
-[210888][   progress] issue_1353-2.c starting
-[210888][   progress] issue_1353-2.c DONE
-[210888][   progress] 
-[210888][   progress] Analysis finished in 249mss
-[210888][      debug] collected stats:
-[210888][      debug] Backend stats:
-[210888][      debug]   summary_file_try_load= 38
-[210888][      debug]   summary_read_from_disk= 1
-[210888][      debug]   summary_cache_hits= 48 (71%)
-[210888][      debug]   summary_cache_misses= 19
-[210888][      debug]   summary_has_model_queries= 2
-[210888][      debug]   ondemand_procs_analyzed= 2
-[210888][      debug]   ondemand_local_cache_hits= 53 (89%)
-[210888][      debug]   ondemand_local_cache_misses= 6
-[210888][      debug]   
-[210888][      debug] 
+[11121][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[11121][environment] 
+[11121][   progress] Capturing in make/cc mode...
+[11121][      debug] 
+[11121][      debug] *** Beginning capture of file /home/mohui1999/test/issueCode/issue_1298.cpp ***
+[11121][      debug] Clang frontend action is translating and linting
+[11121][      debug] Loading the following linters files: /usr/local/infer17/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[11121][      debug] Elapsed: 2.697s.
+[11121][      debug] 
+[11121][   progress] Found 1 source file to analyze in /home/mohui1999/test/issueCode/infer-out
+[11121][   progress] issue_1298.cpp starting
+[11121][   progress] issue_1298.cpp DONE
+[11121][   progress] 
+[11121][   progress] Analysis finished in 4.16ss
+[11121][      debug] collected stats:
+[11121][      debug] Backend stats:
+[11121][      debug]   summary_file_try_load= 56
+[11121][      debug]   summary_read_from_disk= 0
+[11121][      debug]   summary_cache_hits= 19 (40%)
+[11121][      debug]   summary_cache_misses= 28
+[11121][      debug]   summary_has_model_queries= 2
+[11121][      debug]   ondemand_procs_analyzed= 2
+[11121][      debug]   ondemand_local_cache_hits= 47 (90%)
+[11121][      debug]   ondemand_local_cache_misses= 5
+[11121][      debug]   
+[11121][      debug] 

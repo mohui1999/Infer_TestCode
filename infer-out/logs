@@ -1,0 +1,32 @@
+[5036][environment] CWD = /home/mohui1999/test
+[5036][environment] No .inferconfig file found
+[5036][environment] Project root = /home/mohui1999/test
+[5036][environment] INFER_ARGS =   @/tmp/args.tmp.34975d  ++Contents of '/tmp/args.tmp.34975d':
+[5036][environment]                                         run --pulse --purity --biabduction
+[5036][environment]                                         --cost --annotation-reachability
+[5036][environment]                                         --bufferoverrun --liveness
+[5036][environment]                                         --loop-hoisting --quandary --racerd
+[5036][environment]                                         --siof --starvation --uninit
+[5036][environment]                                       
+[5036][environment] command line arguments:   infer run --pulse --purity --biabduction --cost
+[5036][environment]                           --annotation-reachability --bufferoverrun
+[5036][environment]                           --liveness --loop-hoisting --quandary --racerd
+[5036][environment]                           --siof --starvation --uninit -- clang -c
+[5036][environment]                           issue_1332.cppActive checkers: annotation reachability (C/C++/ObjC, Java), biabduction (C/C++/ObjC, Java), buffer overrun analysis (C/C++/ObjC, Java), buffer overrun checker (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), pulse (C/C++/ObjC), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), cost analysis (C/C++/ObjC, Java), loop hoisting (C/C++/ObjC, Java), Starvation analysis (C/C++/ObjC, Java), purity (C/C++/ObjC, Java)
+[5036][environment] Infer log identifier is 
+Infer version v0.17.0
+[5036][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[5036][environment] 
+[5036][   progress] Capturing in make/cc mode...
+[5036][   user err] Failed to execute compilation command:
+'/usr/local/infer/lib/infer/infer/bin/../../facebook-clang-plugins/clang/install/bin/clang' 
+  -c issue_1332.cpp
+
+Error message:
+clang-8: error: no such file or directory: 'issue_1332.cpp'
+
+*** Infer needs a working compilation command to run.
+[5036][   user err] Raised at file "stdlib.ml", line 441, characters 14-31
+Called from file "src/in_channel.ml" (inlined), line 72, characters 13-30
+Called from file "base/Utils.ml", line 213, characters 11-44
+
