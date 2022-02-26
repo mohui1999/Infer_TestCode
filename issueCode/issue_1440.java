@@ -11,7 +11,7 @@ class UnsafeTest implements ITaintTest {
 
     @Override
     public void CallSink(String obj) {
-        Main.sink(obj);
+        issue_1440.sink(obj);
     }
 }
 
@@ -25,7 +25,7 @@ class SafeTest implements ITaintTest {
     public void CallSink(String obj) { }
 }
 
-public class Main {
+public class issue_1440 {
     public static void main(String[] args) {
         var x = source();
         Test(new SafeTest(), x);    // [!] FALSE POSITIVE

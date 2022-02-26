@@ -1,6 +1,6 @@
 #include<stdio.h>
 void main()
 {
-    char *buf = malloc(cap * sizeof(char));
+    char *buf = malloc(1 * sizeof(char));
     print(buf);
 }

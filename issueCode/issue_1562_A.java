@@ -1,4 +1,4 @@
-public class Foo1A {
+public class issue_1562_A {
 
     public static void main (String[] args) {
         String value = provide();

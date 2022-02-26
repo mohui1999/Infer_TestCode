@@ -1,13 +1,19 @@
-Found 1 issue
+Found 2 issues
 
-issue_1298.cpp:8: error: UNINITIALIZED_VALUE
-  The value read from number1 was never initialized.
-  6.           int number1 __attribute__((unused)) = 1;
-  7.           int number2 __attribute__((unused));
-  8. >         cout<<"Number: " << number1;
-  9.   }
-  10.   
+issue_1244.c:1: error: PURE_FUNCTION
+  Side-effect free function myfun.
+  1. > void myfun(int i) {
+  2.       int j;
+  3.       for (; j = i * 2+ 1, j < 10; i = j) { j++; }
+
+issue_1244.c:3: error: UNINITIALIZED_VALUE
+  The value read from j was never initialized.
+  1.   void myfun(int i) {
+  2.       int j;
+  3. >     for (; j = i * 2+ 1, j < 10; i = j) { j++; }
+  4.       return;
 
 Summary of the reports
 
   UNINITIALIZED_VALUE: 1
+        PURE_FUNCTION: 1
